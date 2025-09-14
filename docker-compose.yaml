@@ -1,0 +1,23 @@
+services:
+  kurikula_web:
+    container_name: kurikula_web
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: "kurikula_web"
+    ports:
+      - "4000:4000"
+    environment:
+      - MIX_ENV=dev
+    depends_on:
+      - kurikula_db
+
+  kurikula_db:
+    container_name: kurikula_db
+    image: "mysql:8.0"
+    restart: always
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: yes
+      MYSQL_DATABASE: kurikula_dev
+    ports:
+      - "3307:3306"

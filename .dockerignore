@@ -1,0 +1,38 @@
+# Dependencies & build artifacts
+/_build
+/deps
+
+# Node dependencies (kalau ada, misalnya pake npm/yarn)
+assets/node_modules
+assets/build
+
+# Relases output
+/rel
+
+# Logs & temp files
+/log
+/tmp
+*.log
+
+# Erlang cookie (jangan pernah ikut image)
+.erlang.cookie
+
+# Git
+.git
+.gitignore
+
+# Docker sendiri
+.dockerignore
+Dockerfile
+docker-compose*.yml
+
+# Editor/IDE
+*.swp
+*.swo
+*.bak
+*.tmp
+*.old
+*.swp
+*.DS_Store
+.idea
+.vscode
