@@ -1,3 +1,5 @@
+![Kurikula Logo](./priv/static/images/kurikula_logo_removed_bg.png)
+
 # Kurikula 📚
 
 **Kurikula** is a **web-based platform built with Elixir Phoenix**  
