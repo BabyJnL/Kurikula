@@ -16,6 +16,7 @@ RUN mix deps.get
 
 # Copy seluruh source code
 COPY . .
+RUN cp config/dev.example.exs config/dev.exs
 
 # Expose port Phoenix
 EXPOSE 4000
