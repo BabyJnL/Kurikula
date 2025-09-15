@@ -2,10 +2,10 @@ import Config
 
 # Configure your database
 config :kurikula, Kurikula.Repo,
-  username: "root",
-  password: "",
-  hostname: "kurikula_db",
-  database: "kurikula_dev",
+  username: "change_me",
+  password: "change_me",
+  hostname: "change_me",
+  database: "change_me",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
